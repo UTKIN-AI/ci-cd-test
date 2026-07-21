@@ -13,7 +13,7 @@ push:
          - uses: actions/setup-go@v4
 
          - name: Build
-        run: go build -v ./...
+           run: go build -v ./...
     
     tests:
         needs: build
@@ -23,7 +23,7 @@ push:
          - uses: actions/setup-go@v4
 
          - name: Test
-         run: go test -v ./...
+           run: go test -v ./...
 
          # Задание проверяет наличие в коде состояние гонки
     tests-race:
@@ -34,7 +34,7 @@ push:
          - uses: actions/setup-go@v4
 
          - name: Test
-        run: go test -race -v ./...
+           run: go test -race -v ./...
 
 
     lint:
